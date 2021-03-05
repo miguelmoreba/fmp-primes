@@ -1,0 +1,11 @@
+{
+  "name": "fmp-primes",
+  "version": "1.0.0",
+  "description": "Primer number (and multiples) generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
