@@ -1,3 +1,5 @@
+const {isPrime} = require('../index');
+
 test('isPrime() returns true when first 15 prime numbers are passed', () => {
     expect(isPrime(2)).toBe(true);
     expect(isPrime(3)).toBe(true);
