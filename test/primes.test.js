@@ -1,4 +1,4 @@
-const {isPrime, getMatrix} = require('../index');
+const { isPrime, generatePrimeArray } = require('../index');
 
 test('isPrime() returns true when first 15 prime numbers are passed', () => {
     expect(isPrime(2)).toBe(true);
@@ -34,6 +34,11 @@ test('isPrime() returns false when first 15 non prime numbers are passed', () =>
     expect(isPrime(22)).toBe(false);
     expect(isPrime(24)).toBe(false);
     expect(isPrime(25)).toBe(false);
+});
+
+test('generatePrimeArray() returns correct array for 3 numbers', () => {
+    const expected = [2, 3, 5];
+    expect(generatePrimeArray(3).toString()).toMatch(expected.toString());
 });
 
 test('getMatrix() returns correct result for 3 numbers', () => {
