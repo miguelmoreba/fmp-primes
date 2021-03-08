@@ -1,4 +1,4 @@
-const {isPrime} = require('../index');
+const {isPrime, getMatrix} = require('../index');
 
 test('isPrime() returns true when first 15 prime numbers are passed', () => {
     expect(isPrime(2)).toBe(true);
@@ -34,4 +34,10 @@ test('isPrime() returns false when first 15 non prime numbers are passed', () =>
     expect(isPrime(22)).toBe(false);
     expect(isPrime(24)).toBe(false);
     expect(isPrime(25)).toBe(false);
-})
+});
+
+test('getMatrix() returns correct result for 3 numbers', () => {
+    const expected = "|  | 2| 3| 5|\n| 2| 4| 6| 10|\n| 3| 6| 9| 15|\n| 5| 10| 15| 25|"
+
+    expect(getMatrix(3)).toMatch(expected);
+});
