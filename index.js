@@ -27,3 +27,5 @@ const generatePrimeArray = (n) => {
     }
     return primeArray;
 }
+
+module.exports = { isPrime, generatePrimeArray };
