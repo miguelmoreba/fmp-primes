@@ -17,4 +17,13 @@ const isPrime = (num) => {
     return true;
 }
 
-module.exports = {isPrime};
+const generatePrimeArray = (n) => {
+    const primeArray = [];
+
+    for (let i = 2; primeArray.length !== n; i++) {
+        if (isPrime(i)) {
+            primeArray.push(i);
+        }
+    }
+    return primeArray;
+}
