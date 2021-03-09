@@ -28,4 +28,26 @@ const generatePrimeArray = (n) => {
     return primeArray;
 }
 
+const getMatrix = (n) => {
+    const primeNumbersArray = generatePrimeArray(n);
+    const multiples = primeNumbersArray
+        .map(number => [`| ${number}`]
+            .concat(primeNumbersArray
+                .map(prime => `| ${prime * number}`)
+                .concat('|\n')
+            )
+        );
+
+    const primeNumbersString = '|  '
+        .concat(primeNumbersArray
+            .map(number => `| ${number}`)
+            .join("")
+            .concat('|\n')
+        );
+
+    const multiplesString = multiples.flat().join("");
+    return primeNumbersString + multiplesString;
+}
+
+
 module.exports = { isPrime, generatePrimeArray };
