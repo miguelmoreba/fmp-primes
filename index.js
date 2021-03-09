@@ -50,4 +50,4 @@ const getMatrix = (n) => {
 }
 
 
-module.exports = { isPrime, generatePrimeArray };
+module.exports = { isPrime, generatePrimeArray, getMatrix };
