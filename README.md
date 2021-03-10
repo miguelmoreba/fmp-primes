@@ -2,9 +2,12 @@
 
 ## Instructions to run
 
-From root of folder:
+- node v14.x.x or lts
+- npm v6.x.x or lts
 
-```npm i```
+From root folder:
+
+```npm install```
 
 ```npm run start```
 
@@ -24,6 +27,10 @@ You can expect a reasonable performance up to 1000, then you'll have to wait a b
 ## Tests
 
 There's a functionality suite and a performance suit. You can run them lke so:
+
+```npm install```
+
+then
 
 - Functionality: `npm run test:func`
 - Performance: `npm run test:perf`
