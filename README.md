@@ -36,4 +36,13 @@ then
 - Performance: `npm run test:perf`
 - Both: `npm test`
 
+### What I'm pleased with
 
+- Simple solution all around
+- Using mocha for tests. I started using jest but I much prefer mocha for its speed and versatility.
+- Square root of number makes algorithm more performant.
+
+### Things I would like to work on
+
+- Build a proper front end for the app
+- Make the algorithm more performant by keeping track of the prime numbers found thus and check for divisibility against these first
